@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:id="@+id/home">
+
+
+        <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+            android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/informationimages"
+                >
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/informationimagesview"
+                    />
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/DotItem"
+                    app:tabBackground="@drawable/tab_select"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mostpopular"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/informationimages"
+                android:text="Most Popular"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/mostpopular"
+                android:id="@+id/tab1scroll"
+                android:background="@drawable/relative_layout_border"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/recyclerview_mostpopular"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Central Government"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tab1scroll"
+                android:id="@+id/centralgovernment"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewall3"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tab1scroll"
+                android:text="View All"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/centralgovernment"
+                android:id="@+id/tab2scroll"
+                android:background="@drawable/relative_layout_border"
+                android:layout_margin="10dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/recyclerview_centralgovernment"
+                    android:orientation="horizontal"/>
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tab2scroll"
+                android:id="@+id/education"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewall4"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tab2scroll"
+                android:text="View All"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/education"
+                android:layout_margin="10dp"
+                android:id="@+id/tab3scroll">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/recyclerview_education"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+</RelativeLayout>

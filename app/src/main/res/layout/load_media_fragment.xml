@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Load_media_fragment">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload from your Device"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/OR"
+        android:layout_margin="50dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#EFFD5F"
+        android:id="@+id/Upload_from_device"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textSize="20dp"
+        android:id="@+id/OR"
+        android:gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#ED820E"
+        android:layout_height="wrap_content"
+        android:text="Click to capture"
+        android:layout_margin="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/OR"
+        android:id="@+id/Capture_from_device"/>
+
+</RelativeLayout>

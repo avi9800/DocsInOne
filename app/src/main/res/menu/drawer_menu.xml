@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_arrow_drop_up_black_24dp"
+        />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+    <item
+        android:id="@+id/signup"
+        android:title="Sign Up"
+        android:icon="@drawable/ic_arrow_drop_down_black_24dp"
+        />
+    </group>
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/group5">
+            <item
+                android:id="@+id/send"
+                android:title="Send"
+                android:icon="@drawable/sending_icon"
+                />
+            <item
+                android:id="@+id/recieve"
+                android:title="Recieve"
+                android:icon="@drawable/download_icon"
+                />
+
+        </group>
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/group6">
+            <item
+                android:id="@+id/me"
+                android:title="Me"
+                android:icon="@drawable/ic_forum_black_24dp"/>
+        </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+    <item
+        android:id="@+id/faqs"
+        android:title="FAQS"
+        android:icon="@drawable/ic_forum_black_24dp"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+    <item
+        android:id="@+id/About"
+        android:title="About Us"
+        android:icon="@drawable/ic_beach_access_black_24dp"/>
+    </group>
+
+
+
+
+    <!--group android:checkableBehavior="single"
+        android:id="@+id/group8">
+    <item
+        android:id="@+id/logout"
+        android:title="LogOut"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+    </group-->
+
+    </group>
+</menu>

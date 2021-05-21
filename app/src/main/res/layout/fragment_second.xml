@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentSecond">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Name"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/name_textview"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_textview"
+            android:id="@+id/name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="30dp"
+            android:hint="Enter name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Phone number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name"
+            android:textSize="30dp"
+            android:id="@+id/textview"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview"
+            android:id="@+id/phonenumber"
+            android:inputType="number"
+            android:layout_marginTop="30dp"
+            android:hint="Enter 10 digit phone number"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sendotp"
+            android:layout_below="@+id/phonenumber"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>
